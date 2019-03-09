@@ -312,11 +312,20 @@ public class MainFragment extends Fragment {
                 otherNum = operation.tangent(otherNum);
                 break;
         }
-        screen.setText(otherNum);
-        numOnScreen = "";
+        // handle Integer Overflow
+        if (Long.valueOf(otherNum) >= Integer.MAX_VALUE || Long.valueOf(otherNum)<=Integer.MIN_VALUE) {
+            screen.setText("E");
+            numOnScreen = "";
+            otherNum = "";
+            runningOperator = "";
+        }
+        else {
+            screen.setText(otherNum);
+        }
         if (!sign.equals("=")) {        // '='cannot be used in future operations so why store it?
             runningOperator = sign;
         }
+        numOnScreen = "";
     }
 
     private void updateScreenNumber(String number) {

@@ -1,4 +1,5 @@
 package com.example.operation;
+import android.net.wifi.WifiManager;
 import android.util.Log;
 
 import java.lang.Math.*;
@@ -26,6 +27,7 @@ public class Operation {
             double second = Double.valueOf(secondNumber);
             return String.valueOf(first-second);
         }
+
         else {
             int first = Integer.valueOf(firstNumber);
             int second = Integer.valueOf(secondNumber);
@@ -40,6 +42,7 @@ public class Operation {
             double second = Double.valueOf(secondNumber);
             return String.valueOf(first*second);
         }
+
         else {
             int first = Integer.valueOf(firstNumber);
             int second = Integer.valueOf(secondNumber);
