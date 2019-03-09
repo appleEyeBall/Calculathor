@@ -14,8 +14,8 @@ public class Operation {
             return String.valueOf(first+second);
         }
         else {
-            int first = Integer.valueOf(firstNumber);
-            int second = Integer.valueOf(secondNumber);
+            long first = Long.valueOf(firstNumber);
+            long second = Long.valueOf(secondNumber);
             return String.valueOf(first+second);
         }
     }
@@ -27,10 +27,9 @@ public class Operation {
             double second = Double.valueOf(secondNumber);
             return String.valueOf(first-second);
         }
-
         else {
-            int first = Integer.valueOf(firstNumber);
-            int second = Integer.valueOf(secondNumber);
+            long first = Long.valueOf(firstNumber);
+            long second = Long.valueOf(secondNumber);
             return String.valueOf(first-second);
         }
     }
@@ -42,10 +41,9 @@ public class Operation {
             double second = Double.valueOf(secondNumber);
             return String.valueOf(first*second);
         }
-
         else {
-            int first = Integer.valueOf(firstNumber);
-            int second = Integer.valueOf(secondNumber);
+            long first = Long.valueOf(firstNumber);
+            long second = Long.valueOf(secondNumber);
             return String.valueOf(first*second);
         }
     }
@@ -59,8 +57,8 @@ public class Operation {
             return String.valueOf(first/second);
         }
         else {
-            int first = Integer.valueOf(firstNumber);
-            int second = Integer.valueOf(secondNumber);
+            long first = Long.valueOf(firstNumber);
+            long second = Long.valueOf(secondNumber);
             return String.valueOf(first/second);
         }
     }
@@ -82,3 +80,4 @@ public class Operation {
     }
 
 }
+

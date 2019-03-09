@@ -312,8 +312,8 @@ public class MainFragment extends Fragment {
                 otherNum = operation.tangent(otherNum);
                 break;
         }
-        // handle Integer Overflow
-        if (Long.valueOf(otherNum) >= Integer.MAX_VALUE || Long.valueOf(otherNum)<=Integer.MIN_VALUE) {
+        if ((long) Math.round(Double.valueOf(otherNum)) >= Integer.MAX_VALUE ||
+                (long) Math.round(Double.valueOf(otherNum)) <= Integer.MIN_VALUE) {
             screen.setText("E");
             numOnScreen = "";
             otherNum = "";
