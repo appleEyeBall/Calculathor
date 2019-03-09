@@ -49,7 +49,8 @@ public class Operation {
     public String division(String firstNumber, String secondNumber){
         if (firstNumber.equals("")) {firstNumber="1";}
         if (secondNumber.equals("")) {secondNumber = "1"; }
-        if (firstNumber.contains(".") || secondNumber.contains(".")) {
+        if (firstNumber.contains(".") || secondNumber.contains(".") ||
+                Integer.valueOf(firstNumber) < Integer.valueOf(secondNumber)) {
             double first = Double.valueOf(firstNumber);
             double second = Double.valueOf(secondNumber);
             return String.valueOf(first/second);
